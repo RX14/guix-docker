@@ -4,7 +4,7 @@ ADD entrypoint /entrypoint
 
 # Create working guix system under ubuntu
 RUN apt-get update \
- && apt-get install -y wget xz-utils \
+ && apt-get install -y wget xz-utils netbase \
  \
  && cd /tmp \
  && wget https://alpha.gnu.org/gnu/guix/guix-binary-0.13.0.x86_64-linux.tar.xz \
