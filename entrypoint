@@ -1,0 +1,8 @@
+#!/bin/bash
+GUIX_PROFILE=$HOME/.guix-profile
+source $GUIX_PROFILE/etc/profile
+
+start-guix &
+disown
+
+exec /bin/bash
